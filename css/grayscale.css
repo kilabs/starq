@@ -55,7 +55,7 @@ a:focus {
   text-transform: normal;
   font-size: 12px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #light;
+  background: #d36b3c;
 }
 .navbar-brand {
   font-weight: 700;
@@ -117,6 +117,10 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
+.client img {
+  text-align: center;
+  width: 120px;
+}
 .intro-body {
   display: table-cell;
   vertical-align: middle;
@@ -125,6 +129,9 @@ a:focus {
   color: #fff;
   background-color: transparent;
   border-color: #fff;
+}
+.btn-outline-inverse:hover {
+  color: #fff;
 }
 .brand-heading {
   font-size: 40px;

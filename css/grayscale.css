@@ -236,6 +236,10 @@ figure img {
 .content-section {
   padding-top: 100px;
 }
+.tech {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 40px;
+}
 .download-section {
   width: 100%;
   padding: 50px 0;

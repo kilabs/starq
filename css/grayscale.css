@@ -236,6 +236,10 @@ figure img {
 .content-section {
   padding-top: 100px;
 }
+.content-section .labels {
+  float: left;
+  text-align: left;
+}
 .client {
   padding: 20px 0px;
 }

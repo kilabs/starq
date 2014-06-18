@@ -18,4 +18,14 @@ $(document).ready(function(){
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+    
+    $("#owl-demo").owlCarousel({
+
+        navigation : false,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem : true,
+        autoHeight: true
+
+    });
 });

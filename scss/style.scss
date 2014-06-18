@@ -5,6 +5,9 @@ $gray: #5C5C5C;
 *, *:before, *:after {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 
 body,html{
     height: 100%;
@@ -21,7 +24,7 @@ body{
 }
 p{
     font-size: 14px;
-    font-family: 'Arial';
+//    font-family: 'Arial';
 }
 .btn, .form-control{
     border-radius: 0px;
@@ -44,7 +47,8 @@ p{
 }
 #scrollSpy{
     position: fixed;
-    bottom: 0px;
+    top: 100%;
+    margin-top: -50px;
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
@@ -52,16 +56,19 @@ p{
     z-index: 999;
     border-radius: 0px;
     
+    -webkit-transition: all .5s; /* For Safari 3.1 to 6.0 */
+    transition: all .5s;
+    
     &.when-scroll{
-        top: 0px !important;
-        bottom: auto !important;
+        top: 50px;
+        bottom: auto;
     }
 }
 
 h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
     font-weight: 700;
-    font-family: 'Nunito', sans-serif;
+//    font-family: 'Nunito', sans-serif;
 }
 
 .btn-red{
@@ -131,17 +138,24 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #portfolio{
-//    border-bottom: solid #f8f8f8 1px;
-    color: #999;
+    color: #FFF;
+    padding: 0px;
+    position: relative;
     h2{
         &:after{
             content: "";
             width: 115px;
             height: 1px;
-            background: #999;
+            background: #FFF;
             display: block;
             margin: 20px auto 0px auto;
         }
+        z-index: 99;
+        padding-top: 70px;
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
     }
     .desc{
         text-align: left;
@@ -150,6 +164,55 @@ h1,h2,h3,h4,h5,h6{
             padding: 20px auto;
             margin-bottom: 30px;
         }
+    }
+    
+    #owl-demo{
+        .item{
+            display: block;
+            padding: 170px 70px 70px 70px;
+            
+            .capture{
+                text-align: center;
+                
+                img{
+                    max-width: 80%;
+                }
+            }
+        }
+        
+        .owl-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            right: 0px;
+            
+            .owl-page span{
+                background: #FFF;
+            }
+        }
+    }
+    
+    .store{
+        width: 135px;
+    }
+    
+    .pink{
+        background: #C60C30;
+    }
+    .green{
+        background: #73A445;
+    }
+    .orange{
+        background: #EB8C40;
+    }
+    .blue{
+        background: #3B9DCE;
+    }
+    .red{
+        background: #AF1E2C;
+    }
+    .gray{
+        background: #272F37;
     }
 }
 

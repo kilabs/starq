@@ -1,0 +1,264 @@
+$red: #F85360;
+$gray: #5C5C5C;
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body,html{
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    
+    > section{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+p{
+    font-size: 14px;
+//    font-family: 'Arial';
+}
+.btn, .form-control{
+    border-radius: 0px;
+}
+
+.navbar{
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    a{
+        color: #999;
+    }
+    .active a {
+        background: #5C5C5C;
+        color: #FFF;
+    }
+    .icon-bar{
+        background-color: #999;
+    }
+}
+#scrollSpy{
+    position: fixed;
+    top: 100%;
+    margin-top: -50px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    background: #FFF;
+    z-index: 999;
+    border-radius: 0px;
+    
+    -webkit-transition: all .5s; /* For Safari 3.1 to 6.0 */
+    transition: all .5s;
+    
+    &.when-scroll{
+        top: 50px;
+        bottom: auto;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    font-weight: 700;
+//    font-family: 'Nunito', sans-serif;
+}
+
+.btn-red{
+    background: $red;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+#intro{
+    height: 100%;
+    display: table;
+    width: 100%;
+    text-align: center;
+    
+    &.header{
+        background: url('../img/header-bg.png') center center no-repeat;
+        background-size: 95% auto;
+    }
+    
+    .intro-body{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .intro-text{
+        color: $red;
+    }
+    
+    .brand-heading{
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    
+}
+
+#about{
+    background: $gray;
+    color: #FFF;
+    
+    h2, h4{
+        text-transform: uppercase;
+        &:after{
+            content: "";
+            width: 115px;
+            height: 1px;
+            background: #fff;
+            display: block;
+            margin: 20px auto 0px auto;
+        }
+    }
+    .small-pig{
+        padding: 15px;
+        font-size: 12px;
+    }
+    
+    #service {
+        figure{
+            img{
+//                width: 0%;
+            }
+        }
+        .col-md-4{
+            margin-top: 35px;
+        }
+    }
+}
+
+#portfolio{
+    color: #FFF;
+    padding: 0px;
+    position: relative;
+    h2{
+        &:after{
+            content: "";
+            width: 115px;
+            height: 1px;
+            background: #FFF;
+            display: block;
+            margin: 20px auto 0px auto;
+        }
+        z-index: 99;
+        padding-top: 70px;
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+    }
+    .desc{
+        text-align: left;
+        padding-top: 20px;
+        p{
+            padding: 20px auto;
+            margin-bottom: 30px;
+        }
+    }
+    
+    #owl-demo{
+        .item{
+            display: block;
+            padding: 170px 70px 70px 70px;
+            
+            .capture{
+                text-align: center;
+                
+                img{
+                    max-width: 80%;
+                }
+            }
+        }
+        
+        .owl-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            right: 0px;
+            
+            .owl-page span{
+                background: #FFF;
+            }
+        }
+    }
+    
+    .store{
+        width: 135px;
+    }
+    
+    .pink{
+        background: #C60C30;
+    }
+    .green{
+        background: #73A445;
+    }
+    .orange{
+        background: #EB8C40;
+    }
+    .blue{
+        background: #3B9DCE;
+    }
+    .red{
+        background: #AF1E2C;
+    }
+    .gray{
+        background: #272F37;
+    }
+}
+
+#client{
+    background: #f8f8f8;
+    .client{
+        margin: 15px auto;
+        img{
+            width: 120px;
+            height: auto;
+            opacity: .6;
+            
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    
+    h2{
+        color: #5C5C5C;
+        
+        &:after{
+            content: "";
+            width: 115px;
+            height: 1px;
+            background: #5C5C5C;
+            display: block;
+            margin: 20px auto 0px auto;
+        }
+    }
+}
+
+#contact{
+    background: #E3E7EC;
+    h2{
+        color: #7D7E80;
+    }
+    p{
+        color: #999999;
+    }
+    .form-group{
+        text-align: left;
+        color: #999999;
+        
+        label{
+            font-weight: 300;
+        }
+    }
+}
